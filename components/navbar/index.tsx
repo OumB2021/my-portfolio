@@ -1,4 +1,7 @@
 import Logo from "../logo";
+import NightMode from "../night-mode";
+import { Button } from "../ui/button";
+import ItemList from "./item-list";
 import { navItems } from "./nav-elements";
 
 function Navbar() {
@@ -10,7 +13,16 @@ function Navbar() {
           <Logo />
         </div>
         {/* MIDDLE SIDE - Navigation */}
-        <div className="flex items-center justify-center gap-x-4"></div>
+        <div className="flex items-center justify-center gap-x-6">
+          {navItems.map((item) => (
+            <ItemList key={item.label} label={item.label} href={item.href} />
+          ))}
+        </div>
+        {/* RIGHT SIDE */}
+        <div className="flex items-center justify-between gap-x-3">
+          <NightMode />
+          <Button>Contact Me</Button>
+        </div>
       </div>
     </nav>
   );

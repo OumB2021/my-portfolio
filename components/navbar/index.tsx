@@ -1,3 +1,4 @@
+import { useMediaQuery } from "usehooks-ts";
 import Logo from "../logo";
 import NightMode from "../night-mode";
 import { Button } from "../ui/button";
@@ -7,13 +8,13 @@ import { navItems } from "./nav-elements";
 function Navbar() {
   return (
     <nav className="flex items-center w-full py-5 px-4">
-      <div className="flex items-center justify-between w-full max-w-7xl mx-auto">
+      <div className="flex items-center md:px-10 justify-between w-full max-w-7xl mx-auto">
         {/* LEFT SIDE - Logo */}
         <div className="flex items-center">
           <Logo />
         </div>
         {/* MIDDLE SIDE - Navigation */}
-        <div className="flex items-center justify-center gap-x-6">
+        <div className="hidden md:flex items-center justify-center gap-x-6">
           {navItems.map((item) => (
             <ItemList key={item.label} label={item.label} href={item.href} />
           ))}

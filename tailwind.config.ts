@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import fluid, { extract } from "fluid-tailwind";
 
 type ColorShades = {
   50: string;
@@ -160,6 +161,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [fluid, require("tailwindcss-animate")],
 };
 export default config;

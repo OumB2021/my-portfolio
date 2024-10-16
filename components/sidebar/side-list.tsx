@@ -21,12 +21,16 @@ function SideList({ label, href, Icon }: props) {
         <Tooltip delayDuration={0}>
           <TooltipTrigger>
             <Link href={href}>
-              <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-white border-b border-gray-300 hover:bg-gray-100">
-                <Icon strokeWidth={1.5} className="text-zinc-600" />
+              <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-zinc-800 border-b border-gray-300 hover:bg-zinc-600">
+                <Icon strokeWidth={1.5} className="text-zinc-50" />
               </div>
             </Link>
           </TooltipTrigger>
-          <TooltipContent className="" side="right">
+          <TooltipContent
+            side="right"
+            align="center"
+            className="text-zinc-50 bg-zinc-800"
+          >
             <p>{label}</p>
           </TooltipContent>
         </Tooltip>

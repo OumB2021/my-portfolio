@@ -8,7 +8,7 @@ import { navItems } from "./nav-elements";
 function Navbar() {
   return (
     <nav className="flex items-center w-full py-5 px-4">
-      <div className="flex items-center md:px-10 justify-between w-full max-w-7xl mx-auto">
+      <div className="flex items-center px-10 justify-between w-full max-w-7xl mx-auto">
         {/* LEFT SIDE - Logo */}
         <div className="flex items-center">
           <Logo />
@@ -22,7 +22,7 @@ function Navbar() {
         {/* RIGHT SIDE */}
         <div className="flex items-center justify-between gap-x-3">
           <NightMode />
-          <Button>Contact Me</Button>
+          <Button className="bg-zinc-800 text-gray-50">Contact Me</Button>
         </div>
       </div>
     </nav>

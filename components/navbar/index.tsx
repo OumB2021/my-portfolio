@@ -1,3 +1,5 @@
+"use client";
+
 import { useMediaQuery } from "usehooks-ts";
 import Logo from "../logo";
 import NightMode from "../night-mode";
@@ -6,6 +8,7 @@ import ItemList from "./item-list";
 import { navItems } from "./nav-elements";
 
 function Navbar() {
+  const isXS = useMediaQuery("(max-width: 400px)");
   return (
     <nav className="flex items-center w-full py-5 px-4">
       <div className="flex items-center px-10 justify-between w-full max-w-7xl mx-auto">
@@ -20,9 +23,14 @@ function Navbar() {
           ))}
         </div>
         {/* RIGHT SIDE */}
-        <div className="flex items-center justify-between gap-x-3">
+        <div className="flex items-center justify-between md:gap-x-3">
           <NightMode />
-          <Button className="bg-zinc-800 text-gray-50">Contact Me</Button>
+          <Button
+            size={isXS ? "sm" : "default"}
+            className="bg-zinc-800 text-gray-50 text-xs md:text-sm"
+          >
+            Contact Me
+          </Button>
         </div>
       </div>
     </nav>

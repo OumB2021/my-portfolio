@@ -24,9 +24,15 @@ function NightMode() {
   return (
     <Button variant="link" onClick={toggleTheme}>
       {resolvedTheme === "dark" ? (
-        <Sun className="text-zinc-500 hover:text-zinc-900" size={24} />
+        <Sun
+          className="text-zinc-800 hover:text-black size-5 md:size-6"
+          strokeWidth={1.5}
+        />
       ) : (
-        <Moon className="text-zinc-500 hover:text-zinc-900" size={24} />
+        <Moon
+          className="text-zinc-800 hover:text-black size-5 md:size-6"
+          strokeWidth={1.5}
+        />
       )}
     </Button>
   );

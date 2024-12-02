@@ -12,7 +12,7 @@ function CollapsableCard() {
     console.log(collapsed);
   };
   return (
-    <div className="max-w-7xl mt-4">
+    <div className="max-w-5xl mt-4 mx-auto">
       <div className="w-full bg-gradient-to-tl from-zinc-900 to-zinc-800 rounded-xl shadow-md overflow-hidden">
         {/* Card Header */}
         <div className="flex items-center justify-between p-6">

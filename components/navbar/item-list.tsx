@@ -26,7 +26,6 @@ function ItemList({ label, href }: ItemsProps) {
       }
     };
     window.addEventListener("scroll", handleScroll);
-    // Call handler right away so state gets updated with initial window position
     handleScroll();
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -37,7 +36,7 @@ function ItemList({ label, href }: ItemsProps) {
     <Link href={href}>
       <p
         className={cn(
-          "text-sm font-light text-zinc-600 hover:text-zinc-900 ",
+          "text-sm font-normal text-zinc-600 hover:text-zinc-900 hover:font-semibold ",
           isActive && "text-zinc-900 font-medium"
         )}
       >

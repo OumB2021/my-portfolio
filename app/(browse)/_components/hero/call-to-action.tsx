@@ -11,7 +11,7 @@ function CallToAction() {
     <div className="flex items-center justify-center gap-x-2 md:gap-x-4 pt-5">
       <a
         href="/resume.pdf"
-        className="px-4 py-3 bg-zinc-800 rounded-lg hover:bg-zinc-700 transition-colors"
+        className="px-4 py-3 bg-zinc-800 rounded-sm hover:bg-zinc-700 transition-colors"
         download="OumarBarry_Resume.pdf"
       >
         <div className="flex gap-x-2 gap-4 items-center justify-center">
@@ -21,7 +21,7 @@ function CallToAction() {
       </a>
       <Link
         href="#contact"
-        className="px-4 py-3 border border-zinc-800 rounded-lg hover:bg-zinc-300"
+        className="px-4 py-3 border border-zinc-800 rounded-sm hover:bg-zinc-300"
       >
         <div className="flex gap-x-2 gap-4 items-center justify-center ">
           <MailPlus className="size-5 text-zinc-800" />

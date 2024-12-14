@@ -8,26 +8,26 @@ function CallToAction() {
   const isMobile = useMediaQuery("(max-width: 768px)");
   const isXS = useMediaQuery("(max-width: 400px)");
   return (
-    <div className="flex items-center justify-center gap-x-2 md:gap-x-4 pt-5">
+    <div className="flex items-center justify-center gap-x-2 md:gap-x-4">
       <a
         href="/resume.pdf"
-        className="px-4 py-3 bg-zinc-800 rounded-sm hover:bg-zinc-700 transition-colors"
+        className="px-3 py-2 bg-zinc-700 rounded-sm hover:bg-zinc-800 transition-colors"
         download="OumarBarry_Resume.pdf"
       >
         <div className="flex gap-x-2 gap-4 items-center justify-center">
-          <FileDown className="size-5 text-zinc-50" />
-          <p className="text-zinc-50">{isXS ? "CV" : "Download CV"}</p>
+          <FileDown className="size-4 text-zinc-50" />
+          <p className="text-zinc-50 text-sm">{isXS ? "CV" : "Resume"}</p>
         </div>
       </a>
-      <Link
+      {/* <Link
         href="#contact"
-        className="px-4 py-3 border border-zinc-800 rounded-sm hover:bg-zinc-300"
+        className="px-3 py-2 border border-zinc-500 rounded-sm"
       >
         <div className="flex gap-x-2 gap-4 items-center justify-center ">
           <MailPlus className="size-5 text-zinc-800" />
-          {!isXS && <p className="text-zinc-800">Hire Me</p>}
+          {!isXS && <p className="text-zinc-800 text-sm">Hire Me</p>}
         </div>
-      </Link>
+      </Link> */}
     </div>
   );
 }

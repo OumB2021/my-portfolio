@@ -6,11 +6,14 @@ import NightMode from "../night-mode";
 import ItemList from "./item-list";
 import { navItems } from "./nav-elements";
 import SidebarSheet from "./sidebar-sheet";
+import CallToAction from "@/app/(browse)/_components/hero/call-to-action";
+import { isExternal } from "util/types";
 
 function Navbar() {
-  const isXS = useMediaQuery("(max-width: 400px)");
+  const isXS = useMediaQuery("(max-width: 768px)");
+  console.log(isXS);
   return (
-    <nav className="absolute top-0 left-0 right-0 flex items-center w-full py-5 px-4 border-b ">
+    <nav className="absolute top-0 left-0 right-0 flex items-center w-full py-5 px-4">
       <div className="flex items-center px-5 lg:px-10 justify-between w-full max-w-7xl mx-auto">
         {/* LEFT SIDE - Logo */}
         <div className="flex items-center">
@@ -21,12 +24,23 @@ function Navbar() {
           {navItems.map((item) => (
             <ItemList key={item.label} label={item.label} href={item.href} />
           ))}
-          <NightMode className="bg-zinc-700 rounded-full " />
+          {/* <NightMode className="bg-zinc-700 rounded-full " /> */}
+        </div>
+
+        {/* RIGHT SIDE */}
+        <div className="flex items-center justify-center gap-2">
+          <CallToAction />
+          {!isXS && (
+            <NightMode className="!border !border-zinc-500 !rounded-sm !p-2 !hover:bg-zinc-600" />
+          )}
         </div>
 
         {/* Hamburger Menu for Mobile */}
         <div className="flex md:hidden items-center justify-center gap-2">
-          <NightMode className="bg-zinc-700 rounded-full hover:bg-zinc-900" />
+          {isXS && (
+            <NightMode className="bg-zinc-700 rounded-full hover:bg-zinc-900" />
+          )}
+
           <SidebarSheet />
         </div>
       </div>

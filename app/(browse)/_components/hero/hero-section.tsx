@@ -16,8 +16,8 @@ function HeroSection() {
         <p className="text-sm md:text-lg lg:tracking-wide  text-gray-500 ">
           Transforming ideas into digital realities
         </p>
-        <CallToAction />
-        <Button>Holla</Button>
+        {/* <CallToAction />
+        <Button>Holla</Button> */}
       </div>
     </section>
   );

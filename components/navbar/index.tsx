@@ -28,21 +28,22 @@ function Navbar() {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="flex items-center justify-center gap-2">
-          <CallToAction />
-          {!isXS && (
-            <NightMode className="!border !border-zinc-500 !rounded-sm !p-2 !hover:bg-zinc-600" />
-          )}
-        </div>
+
+        {!isXS && (
+          <div className="flex items-center justify-center gap-2">
+            <CallToAction />
+            <NightMode className="!border !border-zinc-500 !rounded-sm !p-2 hover:!bg-zinc-200" />
+          </div>
+        )}
 
         {/* Hamburger Menu for Mobile */}
-        <div className="flex md:hidden items-center justify-center gap-2">
-          {isXS && (
-            <NightMode className="bg-zinc-700 rounded-full hover:bg-zinc-900" />
-          )}
 
-          <SidebarSheet />
-        </div>
+        {isXS && (
+          <div className="flex md:hidden items-center justify-center gap-2">
+            <NightMode className="bg-zinc-700 rounded-full hover:bg-zinc-900" />
+            <SidebarSheet />
+          </div>
+        )}
       </div>
     </nav>
   );

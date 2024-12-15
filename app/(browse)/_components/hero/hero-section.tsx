@@ -1,9 +1,13 @@
-import { Button } from "@/components/ui/button";
-import CallToAction from "./call-to-action";
-
+"use client";
+import { motion } from "framer-motion";
 function HeroSection() {
   return (
-    <section className="flex max-w-7xl mx-auto min-h-screen items-center -mt-14">
+    <motion.div
+      className="h-full flex items-center justify-center"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="flex flex-col items-center gap-y-2 ">
         <h1 className="font-semibold text-6xl md:text-8xl lg:text-9xl capitalize text-gray-800">
           Oumar Barry
@@ -19,7 +23,8 @@ function HeroSection() {
         {/* <CallToAction />
         <Button>Holla</Button> */}
       </div>
-    </section>
+    </motion.div>
   );
 }
+
 export default HeroSection;

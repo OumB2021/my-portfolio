@@ -1,8 +1,7 @@
 "use client";
 
+import { SECTIONS } from "@/lib/constants";
 import { useState, useEffect } from "react";
-
-const SECTIONS = ["hero", "about", "experience"];
 
 export default function PageTracker() {
   const [activeSection, setActiveSection] = useState(0);
@@ -19,7 +18,7 @@ export default function PageTracker() {
       },
       {
         root: null,
-        threshold: 0.5, // Trigger when 50% of the section is visible
+        threshold: 0.5,
       }
     );
 
@@ -46,13 +45,13 @@ export default function PageTracker() {
   };
 
   return (
-    <div className="fixed top-1/2 right-5 transform -translate-y-1/2 flex flex-col gap-3">
+    <div className="fixed top-1/2 right-5 transform -translate-y-1/2 flex flex-col gap-1">
       {SECTIONS.map((_, index) => (
         <button
           key={index}
-          className={`size-2 rounded-full ${
+          className={`h-1 w-1 rounded-full shadow-sm ${
             activeSection === index
-              ? "bg-zinc-900 h-5"
+              ? "bg-zinc-900 !h-5"
               : "bg-zinc-400 hover:bg-zinc-600"
           }`}
           onClick={() => scrollToSection(index)}

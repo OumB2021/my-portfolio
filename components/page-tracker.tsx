@@ -45,7 +45,7 @@ export default function PageTracker() {
   };
 
   return (
-    <div className="fixed top-1/2 right-5 transform -translate-y-1/2 flex flex-col gap-1">
+    <div className="fixed top-1/2 right-5 transform -translate-y-1/2 flex flex-col gap-1 z-50">
       {SECTIONS.map((_, index) => (
         <button
           key={index}

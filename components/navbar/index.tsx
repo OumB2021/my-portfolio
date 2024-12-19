@@ -7,7 +7,6 @@ import ItemList from "./item-list";
 import { navItems } from "./nav-elements";
 import SidebarSheet from "./sidebar-sheet";
 import CallToAction from "@/app/(browse)/_components/hero/call-to-action";
-import { isExternal } from "util/types";
 
 function Navbar() {
   const isXS = useMediaQuery("(max-width: 768px)");

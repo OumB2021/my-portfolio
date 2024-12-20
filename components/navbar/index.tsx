@@ -10,7 +10,6 @@ import CallToAction from "@/app/(browse)/_components/hero/call-to-action";
 
 function Navbar() {
   const isXS = useMediaQuery("(max-width: 768px)");
-  console.log(isXS);
   return (
     <nav className="absolute top-0 left-0 right-0 flex items-center w-full py-5 px-4 z-50 ">
       <div className="flex items-center px-5 lg:px-10 justify-between w-full max-w-7xl mx-auto">

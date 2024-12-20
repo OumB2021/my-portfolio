@@ -1,10 +1,18 @@
 "use client";
-import { useState } from "react";
+
+import { useEffect, useState } from "react";
 import { Sheet, SheetContent, SheetTrigger } from "../ui/sheet";
 import { Menu } from "lucide-react";
 
 function SidebarSheet() {
-  const [isOpened, setIsOpened] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) return null;
+
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -18,4 +26,5 @@ function SidebarSheet() {
     </Sheet>
   );
 }
+
 export default SidebarSheet;

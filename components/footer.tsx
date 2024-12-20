@@ -6,10 +6,9 @@ import { useMediaQuery } from "usehooks-ts";
 
 function Footer({ className }: { className?: string }) {
   const isXS = useMediaQuery("(max-width: 768px)");
+
   return (
-    <div
-      className={"absolute bottom-0 left-0 right-0 px-10 md:px-20 p-10 z-50"}
-    >
+    <div className="absolute bottom-0 left-0 right-0 px-10 md:px-20 py-6 z-50">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* COPYRIGHT MESSAGE */}
         <div>
@@ -17,33 +16,31 @@ function Footer({ className }: { className?: string }) {
             &copy; {new Date().getFullYear()} - Oumar Barry
           </p>
         </div>
+
         {/* ICONS */}
-        <div className="flex items-center justify-center gap-3 ">
+        <div className="flex items-center gap-3">
+          {/* LinkedIn */}
           <Link
             href="#"
-            className="p-2 bg-muted-foreground/20 rounded-lg hover:bg-muted-foreground/30"
+            className="p-2 bg-muted-foreground/30 rounded-sm hover:bg-muted-foreground/40 flex items-center gap-2 transition-colors duration-200"
           >
-            <span className="flex items-center justify-center gap-1">
-              <Linkedin
-                className="size-5 text-muted-foreground"
-                strokeWidth={1.5}
-              />
-              {!isXS && (
-                <p className="text-sm text-muted-foreground">Linkedin</p>
-              )}
-            </span>
+            <Linkedin
+              className="w-5 h-5 text-muted-foreground"
+              strokeWidth={1.5}
+            />
+            {!isXS && <p className="text-sm text-muted-foreground">LinkedIn</p>}
           </Link>
+
+          {/* GitHub */}
           <Link
             href="#"
-            className="p-2 bg-muted-foreground/20 rounded-lg hover:bg-muted-foreground/30"
+            className="p-2 bg-muted-foreground/30 rounded-sm hover:bg-muted-foreground/40 flex items-center gap-2 transition-colors duration-200"
           >
-            <span className="flex items-center justify-center gap-1">
-              <Github
-                className="size-5 text-muted-foreground"
-                strokeWidth={1.5}
-              />
-              {!isXS && <p className="text-sm text-muted-foreground">Github</p>}
-            </span>
+            <Github
+              className="w-5 h-5 text-muted-foreground"
+              strokeWidth={1.5}
+            />
+            {!isXS && <p className="text-sm text-muted-foreground">GitHub</p>}
           </Link>
         </div>
       </div>

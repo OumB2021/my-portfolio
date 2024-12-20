@@ -8,13 +8,16 @@ function About() {
     >
       <Grain opacity={0.08} />
       <div className="max-w-7xl mx-auto px-14 lg:px-6">
-        <h1 className="text-center text-2xl lg:text-4xl font-bold text-stone-500 uppercase">
+        <h1 className="text-center text-2xl lg:text-4xl font-bold text-stone-500 capitalize">
           About Me
         </h1>
         <p className="mt-4 text-sm md:text-base text-center leading-relaxed text-stone-400 max-w-4xl mx-auto">
           Hello! I'm <strong className="text-[#f4f4f5]">Oumar Barry</strong>, a
           senior majoring in Computer Science at The City College of New York
-          with a passion for full-stack web development.
+          with a passion for{" "}
+          <strong className="text-[#f4f4f5]">
+            Full-Stack Web Development.
+          </strong>
         </p>
         <p className="mt-4 text-sm md:text-base text-center leading-relaxed text-stone-400 max-w-4xl mx-auto">
           Originally from the Ivory Coast, I moved to the United States seven

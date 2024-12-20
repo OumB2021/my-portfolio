@@ -12,8 +12,9 @@ function Footer({ className }: { className?: string }) {
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* COPYRIGHT MESSAGE */}
         <div>
-          <p className="text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} - Oumar Barry
+          <p className="text-sm text-muted-foreground/50">
+            Copyright &copy; {new Date().getFullYear()} Oumar Barry. All rights
+            reserved.
           </p>
         </div>
 

@@ -7,6 +7,7 @@ import PageTracker from "@/components/page-tracker";
 import Dummy from "./dummy";
 import Dummy2 from "./dummy copy";
 import { SECTIONS } from "@/lib/constants";
+import Projects from "./_components/projects/projects";
 
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -65,8 +66,8 @@ export default function Home() {
       <section id="about" className="h-screen snap-start">
         <About />
       </section>
-      <section id="experience" className="h-screen snap-start">
-        <Dummy />
+      <section id="projects" className="h-screen snap-start">
+        <Projects />
       </section>
       <section id="page-tracker" className="h-screen snap-start">
         <Dummy2 />

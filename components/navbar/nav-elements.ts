@@ -10,7 +10,7 @@ export const navItems = [
   },
   {
     label: "Projects",
-    href: "#work",
+    href: "#Projects",
   },
   {
     label: "Contact me",

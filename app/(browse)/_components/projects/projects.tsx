@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function Projects() {
   return (
-    <section className="relative h-full bg-red-950/40">
+    <section className="relative h-full bg-red-950">
       <Grain opacity={0.09} />
       <motion.div
         className="h-full flex flex-col items-center justify-center gap-10 z-10 relative"

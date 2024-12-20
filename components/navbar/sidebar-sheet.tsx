@@ -16,8 +16,8 @@ function SidebarSheet() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <button className="rounded-full bg-zinc-700 hover:bg-zinc-900 p-2">
-          <Menu className="size-5 text-zinc-50" />
+        <button className="rounded-full bg-zinc-300 hover:bg-zinc-200 p-2">
+          <Menu className="size-5 text-zinc-700" />
         </button>
       </SheetTrigger>
       <SheetContent className="bg-zinc-800 border-l-0 w-2/3">

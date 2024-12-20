@@ -36,7 +36,7 @@ function ItemList({ label, href }: ItemsProps) {
     <Link href={href}>
       <p
         className={cn(
-          "text-sm font-normal text-zinc-600 hover:text-zinc-900 hover:font-semibold ",
+          "text-sm font-normal text-zinc-400 hover:text-zinc-300 hover:border-b transition-all",
           isActive && "text-zinc-900 font-medium"
         )}
       >

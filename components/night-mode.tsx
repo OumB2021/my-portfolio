@@ -30,8 +30,8 @@ function NightMode({ className }: buttonProps) {
     <button
       onClick={toggleTheme}
       className={cn(
-        "text-zinc-50 p-2 md:p-0 md:text-zinc-800 md:bg-zinc-50 bg-zinc-700 rounded-full flex items-center justify-center",
-        className // Ensure this is last to give priority to the prop
+        "text-zinc-50 p-2 md:p-0 md:text-zinc-800  rounded-full flex items-center justify-center",
+        className
       )}
     >
       {resolvedTheme === "dark" ? (

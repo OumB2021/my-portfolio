@@ -45,14 +45,14 @@ export default function PageTracker() {
   };
 
   return (
-    <div className="fixed top-1/2 right-5 transform -translate-y-1/2 flex flex-col gap-1 z-50">
+    <div className="fixed top-1/2 right-5 transform -translate-y-1/2 flex flex-col gap-2 z-50 transition-all delay-150">
       {SECTIONS.map((_, index) => (
         <button
           key={index}
           className={`h-1 w-1 rounded-full shadow-sm ${
             activeSection === index
-              ? "bg-zinc-900 !h-5"
-              : "bg-zinc-400 hover:bg-zinc-600"
+              ? "bg-zinc-200 !h-5"
+              : "bg-zinc-500 hover:bg-zinc-400"
           }`}
           onClick={() => scrollToSection(index)}
         ></button>

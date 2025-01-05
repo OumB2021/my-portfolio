@@ -1,40 +1,48 @@
 export const SECTIONS = ["hero", "about", "projects", "page-tracker"];
 
+// logo
+export const LOGO = "OumB";
+
+// HERO SECTION
+export const Hero = {
+  color: "neutral-950",
+  name: "Oumar Barry",
+  title: "Software Engineer",
+  description: "Transforming ideas into digital realities.",
+};
+
+// PROJECTS
 export const projects = [
   {
-    id: 1,
-    title: "Project 1",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "/images/project-1.jpg",
-    gitLink: "https://github.com/",
-    liveLink: "https://example.com/",
-    stack: ["next", "tailwind", "typescript", "clerk", "vercel"],
+    id: "1",
+    title: "3D model of this beautiful project",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit similique optio laudantium! Obcaecati dolorLorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit similique optio laudantium! Obcaecati dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit similique optio laudantium! Obcaecati dolor, dignissimos quia, sit sapiente fuga laudantium ducimus exercitationem deserunt ullam dolores nisi corrupti suscipit totam sed!",
+    image: "/s1.png",
+    iconList: ["/re.svg", "/next.svg", "/tail.svg", "/ts.svg", "/fm.svg"],
   },
   {
-    id: 2,
-    title: "Project 1",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "/images/project-1.jpg",
-    gitLink: "https://github.com/",
-    liveLink: "https://example.com/",
-    stack: ["next", "tailwind", "typescript", "clerk", "vercel"],
+    id: "1",
+    title: "3D model of this beautiful project",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit similique optio laudantium! Obcaecati dolorLorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit similique optio laudantium! Obcaecati dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit similique optio laudantium! Obcaecati dolor, dignissimos quia, sit sapiente fuga laudantium ducimus exercitationem deserunt ullam dolores nisi corrupti suscipit totam sed!",
+    image: "/s1.png",
+    iconList: ["/re.svg", "/next.svg", "/tail.svg", "/ts.svg", "/fm.svg"],
   },
   {
-    id: 3,
-    title: "Project 1",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "/images/project-1.jpg",
-    gitLink: "https://github.com/",
-    liveLink: "https://example.com/",
-    stack: ["next", "tailwind", "typescript", "clerk", "vercel"],
+    id: "1",
+    title: "3D model of this beautiful project",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit similique optio laudantium! Obcaecati dolorLorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit similique optio laudantium! Obcaecati dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit similique optio laudantium! Obcaecati dolor, dignissimos quia, sit sapiente fuga laudantium ducimus exercitationem deserunt ullam dolores nisi corrupti suscipit totam sed!",
+    image: "/s1.png",
+    iconList: ["/re.svg", "/next.svg", "/tail.svg", "/ts.svg", "/fm.svg"],
   },
   {
-    id: 4,
-    title: "Project 1",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    image: "/images/project-1.jpg",
-    gitLink: "https://github.com/",
-    liveLink: "https://example.com/",
-    stack: ["next", "tailwind", "typescript", "clerk", "vercel"],
+    id: "1",
+    title: "3D model of this beautiful project",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit similique optio laudantium! Obcaecati dolorLorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit similique optio laudantium! Obcaecati dolor Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit similique optio laudantium! Obcaecati dolor, dignissimos quia, sit sapiente fuga laudantium ducimus exercitationem deserunt ullam dolores nisi corrupti suscipit totam sed!",
+    image: "/s1.png",
+    iconList: ["/re.svg", "/next.svg", "/tail.svg", "/ts.svg", "/fm.svg"],
   },
 ];

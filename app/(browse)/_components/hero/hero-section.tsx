@@ -2,9 +2,12 @@
 import Grain from "@/components/grain";
 import { motion } from "framer-motion";
 import { ChevronsDown } from "lucide-react";
+import { Hero } from "@/lib/constants";
+
 function HeroSection() {
+  const { color, name, title, description } = Hero;
   return (
-    <section className="relative h-full bg-neutral-950">
+    <section className={`relative h-full bg-${color}`}>
       <Grain opacity={0.09} />
       <motion.div
         className="h-full flex flex-col items-center justify-center gap-10 z-10 relative"
@@ -14,15 +17,15 @@ function HeroSection() {
       >
         <div className="flex flex-col items-center gap-y-2">
           <h1 className="font-semibold text-5xl sm:text-6xl md:text-8xl lg:text-9xl capitalize text-zinc-300">
-            Oumar Barry
+            {name}
           </h1>
 
           <h2 className="text-2xl  md:text-4xl lg:text-5xl text-zinc-400 uppercase ">
-            Software Engineer
+            {title}
           </h2>
 
           <p className="text-xs md:text-lg lg:tracking-wide  text-muted-foreground ">
-            Transforming ideas into digital realities
+            {description}
           </p>
         </div>
         <div className="bg-opacity-5 p-4 text-zinc-50 rounded-full animate-bounce">

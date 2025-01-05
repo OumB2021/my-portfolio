@@ -11,7 +11,7 @@ import {
 function ProjectCarousel() {
   const [showSwipeHint, setShowSwipeHint] = useState(false);
   return (
-    <Carousel className="w-full max-w-3xl md:max-w-6xl mx-auto">
+    <Carousel className="w-full max-w-3xl md:max-w-5xl mx-auto">
       <CarouselContent>
         <ProjectCard />
         <ProjectCard />

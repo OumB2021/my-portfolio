@@ -5,7 +5,7 @@ export const LOGO = "OumB";
 
 // HERO SECTION
 export const Hero = {
-  color: "neutral-950",
+  color: "black",
   name: "Oumar Barry",
   title: "Software Engineer",
   description: "Transforming ideas into digital realities.",

@@ -5,11 +5,12 @@ import Link from "next/link";
 import { useState, useEffect } from "react";
 
 type ItemsProps = {
+  className?: string;
   label: string;
   href: string;
 };
 
-function ItemList({ label, href }: ItemsProps) {
+function ItemList({ className, label, href }: ItemsProps) {
   const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
@@ -36,8 +37,9 @@ function ItemList({ label, href }: ItemsProps) {
     <Link href={href}>
       <p
         className={cn(
-          "text-sm font-normal text-zinc-400 hover:text-zinc-300 hover:border-b transition-all",
-          isActive && "text-zinc-900 font-medium"
+          "text-sm font-normal hover:border-b transition-all",
+          isActive && "text-zinc-900 font-medium",
+          className
         )}
       >
         {label}

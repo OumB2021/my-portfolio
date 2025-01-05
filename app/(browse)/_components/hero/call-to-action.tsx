@@ -1,7 +1,6 @@
 "use client";
 
 import { FileDown, MailPlus } from "lucide-react";
-import Link from "next/link";
 import { useMediaQuery } from "usehooks-ts";
 
 function CallToAction() {

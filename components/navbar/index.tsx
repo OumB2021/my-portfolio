@@ -8,7 +8,11 @@ import SidebarSheet from "./sidebar-sheet";
 import CallToAction from "@/app/(browse)/_components/hero/call-to-action";
 import { useEffect, useState } from "react";
 
-function Navbar() {
+type LogoProps = {
+  className?: string;
+};
+
+function Navbar({ className }: LogoProps) {
   const [isMounted, setIsMounted] = useState(false);
   const isXS = useMediaQuery("(max-width: 768px)");
 
@@ -17,7 +21,7 @@ function Navbar() {
   }, []);
 
   if (!isMounted) {
-    return null; // Avoid rendering mismatched content
+    return null;
   }
 
   return (
@@ -25,13 +29,18 @@ function Navbar() {
       <div className="flex items-center px-5 lg:px-10 justify-between w-full max-w-7xl mx-auto">
         {/* LEFT SIDE - Logo */}
         <div className="flex items-center">
-          <Logo />
+          <Logo className={className} />
         </div>
 
         {/* MIDDLE SIDE - Navigation */}
         <div className="hidden md:flex items-center justify-center gap-x-6">
           {navItems.map((item) => (
-            <ItemList key={item.label} label={item.label} href={item.href} />
+            <ItemList
+              key={item.label}
+              label={item.label}
+              href={item.href}
+              className={className}
+            />
           ))}
         </div>
 

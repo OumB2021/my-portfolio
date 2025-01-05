@@ -8,7 +8,7 @@ function HeroSection() {
   const { color, name, title, description } = Hero;
   return (
     <section className={`relative h-full bg-${color}`}>
-      <Grain opacity={0.09} />
+      <Grain opacity={0.001} />
       <motion.div
         className="h-full flex flex-col items-center justify-center gap-10 z-10 relative"
         initial={{ opacity: 0, y: 50 }}

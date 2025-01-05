@@ -17,7 +17,7 @@ function About() {
       id="about"
       className="relative py-20 min-h-screen flex items-center bg-teal-950"
     >
-      <Grain opacity={0.08} />
+      <Grain opacity={0.01} />
       <div className="max-w-7xl mx-auto px-10 md:px-14 lg:px-6">
         <h1 className="text-center text-2xl lg:text-4xl font-bold text-zinc-200 capitalize">
           About Me

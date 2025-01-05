@@ -2,8 +2,12 @@ import Image from "next/image";
 
 const Grain = ({ opacity = 0.1, zIndex = 0 }) => {
   return (
-    <div className={`absolute inset-0 z-${zIndex}`}>
-      {" "}
+    <div
+      className={`fixed inset-0 z-${zIndex} w-full h-full`}
+      style={{
+        pointerEvents: "none", // Prevent interference with clicks
+      }}
+    >
       <Image
         src="/Noise.svg"
         alt="noise"
@@ -11,7 +15,6 @@ const Grain = ({ opacity = 0.1, zIndex = 0 }) => {
         style={{
           objectFit: "cover",
           opacity: opacity,
-          pointerEvents: "none", // Prevent interference with clicks
         }}
       />
     </div>

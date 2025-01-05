@@ -5,7 +5,7 @@ export const navItems = [
   },
   {
     label: "Projects",
-    href: "#Projects",
+    href: "#projects",
   },
   {
     label: "Contact me",

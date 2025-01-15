@@ -1,25 +1,48 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProjectCard from "./project-card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "./ui/carousel";
+import { Carousel, CarouselContent, type CarouselApi } from "./ui/carousel";
 
 function ProjectCarousel() {
-  const [showSwipeHint, setShowSwipeHint] = useState(false);
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (!api) {
+      return;
+    }
+
+    setCount(api.scrollSnapList().length);
+    setCurrent(api.selectedScrollSnap());
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
+
   return (
-    <Carousel className="w-full max-w-3xl md:max-w-5xl mx-auto">
-      <CarouselContent>
-        <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
-      </CarouselContent>
-      {/* <CarouselPrevious />
-      <CarouselNext /> */}
-    </Carousel>
+    <div className="relative p-4 md:p-0 md:max-w-4xl mx-auto">
+      <Carousel setApi={setApi}>
+        <CarouselContent>
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+        </CarouselContent>
+      </Carousel>
+
+      <div className="flex justify-center items-center gap-2 mt-4">
+        {Array.from({ length: count }).map((_, index) => (
+          <div
+            key={index}
+            className={`rounded-full transition-all duration-300 ${
+              current === index ? "bg-cyan-500 w-5 h-2 " : "bg-gray-400 size-1"
+            }`}
+          />
+        ))}
+      </div>
+    </div>
   );
 }
+
 export default ProjectCarousel;

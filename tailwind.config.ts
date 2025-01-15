@@ -164,6 +164,10 @@ const config: Config = {
       },
     },
   },
-  plugins: [fluid, require("tailwindcss-animate")],
+  plugins: [
+    fluid,
+    require("tailwindcss-animate"),
+    require("tailwind-scrollbar"),
+  ],
 };
 export default config;

@@ -10,9 +10,10 @@ import { useEffect, useState } from "react";
 
 type LogoProps = {
   className?: string;
+  className2?: string;
 };
 
-function Navbar({ className }: LogoProps) {
+function Navbar({ className, className2 }: LogoProps) {
   const [isMounted, setIsMounted] = useState(false);
   const isXS = useMediaQuery("(max-width: 768px)");
 
@@ -45,7 +46,7 @@ function Navbar({ className }: LogoProps) {
         </div>
 
         {/* RIGHT SIDE */}
-        {!isXS && <CallToAction />}
+        {!isXS && <CallToAction className2={className2} />}
 
         {/* Hamburger Menu for Mobile */}
         {isXS && (

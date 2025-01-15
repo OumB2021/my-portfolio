@@ -1,11 +1,10 @@
-export const SECTIONS = ["hero", "about", "projects", "page-tracker"];
+export const SECTIONS = ["hero", "about", "projects"];
 
 // logo
 export const LOGO = "OumB";
 
 // HERO SECTION
 export const Hero = {
-  color: "black",
   name: "Oumar Barry",
   title: "Software Engineer",
   description: "Transforming ideas into digital realities.",

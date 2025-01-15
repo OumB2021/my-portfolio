@@ -7,7 +7,7 @@ import Link from "next/link";
 
 function Projects() {
   return (
-    <section id="projects" className="relative h-full bg-red-950">
+    <section id="projects" className="relative h-full bg-cyan-950">
       <Grain opacity={0.09} />
       <motion.div
         className="h-full flex flex-col items-center justify-center gap-10 z-10 relative"
@@ -25,7 +25,7 @@ function Projects() {
               <p className="text-center text-base text-zinc-200">
                 These projects showcase my skills and dedication. See everything
                 I&apos;ve worked on{" "}
-                <span className="text-red-300 hover:text-red-200 hover:underline">
+                <span className="text-cyan-300 underline underline-offset-2 hover:text-red-200 hover:underline">
                   <Link href="/projects">here</Link>
                 </span>
               </p>

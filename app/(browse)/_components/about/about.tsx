@@ -15,23 +15,25 @@ function About() {
   return (
     <section
       id="about"
-      className="relative py-20 min-h-screen flex items-center bg-teal-950"
+      className="relative py-20 min-h-screen flex items-center bg-emerald-950"
     >
       <Grain opacity={0.01} />
       <div className="max-w-7xl mx-auto px-10 md:px-14 lg:px-6">
         <h1 className="text-center text-2xl lg:text-4xl font-bold text-zinc-200 capitalize">
           About Me
         </h1>
-        <p className="mt-4 text-sm md:text-base text-center leading-relaxed text-zinc-300 max-w-4xl mx-auto">
-          Hello! I'm <strong className="text-teal-500">Oumar Barry</strong>, a
-          senior majoring in Computer Science at The City College of New York
+        <p className="mt-4 text-sm md:text-base text-center leading-relaxed text-zinc-200 max-w-4xl mx-auto">
+          Hello! I'm <strong className="text-emerald-500">Oumar Barry</strong>,
+          a senior majoring in Computer Science at The City College of New York
           with a passion for{" "}
-          <strong className="text-teal-500">Full-Stack Web Development.</strong>
+          <strong className="text-emerald-500">
+            Full-Stack Web Development.
+          </strong>
         </p>
 
         {/* Render this block only after hydration */}
         {isMounted && !isXS && (
-          <p className="mt-4 text-sm md:text-base text-center leading-relaxed text-zinc-300 max-w-4xl mx-auto">
+          <p className="mt-4 text-sm md:text-base text-center leading-relaxed text-zinc-200 max-w-4xl mx-auto">
             Originally from the Ivory Coast, I moved to the United States seven
             years ago, bringing with me a rich background in graphic design and
             video-editing. For four years, I immersed myself in creating visual
@@ -41,9 +43,9 @@ function About() {
           </p>
         )}
 
-        <p className="mt-4 text-sm md:text-base text-center leading-relaxed text-zinc-300 max-w-4xl mx-auto">
+        <p className="mt-4 text-sm md:text-base text-center leading-relaxed text-zinc-200 max-w-4xl mx-auto">
           In 2016,
-          <strong className="text-teal-500">
+          <strong className="text-emerald-500">
             {" "}
             I took my first online HTML{" "}
           </strong>{" "}

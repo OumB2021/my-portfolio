@@ -3,7 +3,7 @@
 import { FileDown, MailPlus } from "lucide-react";
 import { useMediaQuery } from "usehooks-ts";
 
-function CallToAction() {
+function CallToAction({ className2 }: { className2?: string }) {
   const isMobile = useMediaQuery("(max-width: 768px)");
   const isXS = useMediaQuery("(max-width: 400px)");
   return (

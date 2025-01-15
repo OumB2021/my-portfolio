@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react";
 import HeroSection from "./_components/hero/hero-section";
 import About from "@/app/(browse)/_components/about/about";
 import PageTracker from "@/components/page-tracker";
-import Dummy2 from "./dummy copy";
 import { SECTIONS } from "@/lib/constants";
 import Projects from "./_components/projects/projects";
 
@@ -77,7 +76,7 @@ export default function Home() {
   }, [activeSection, isScrolling]);
 
   return (
-    <div ref={containerRef} className="h-screen w-full overflow-hidden">
+    <div ref={containerRef} className="snap-y h-screen w-full overflow-hidden">
       <PageTracker />
       <section id="hero" className="h-screen snap-start">
         <HeroSection />
@@ -87,9 +86,6 @@ export default function Home() {
       </section>
       <section id="projects" className="h-screen snap-start">
         <Projects />
-      </section>
-      <section id="page-tracker" className="h-screen snap-start">
-        <Dummy2 />
       </section>
     </div>
   );

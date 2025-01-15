@@ -3,11 +3,13 @@ import Grain from "@/components/grain";
 import { motion } from "framer-motion";
 import { ChevronsDown } from "lucide-react";
 import { Hero } from "@/lib/constants";
+import { cn } from "@/lib/utils";
 
 function HeroSection() {
-  const { color, name, title, description } = Hero;
+  const { name, title, description } = Hero;
+  const coolor = "black";
   return (
-    <section className={`relative h-full bg-${color}`}>
+    <section className="relative h-full bg-neutral-950">
       <Grain opacity={0.001} />
       <motion.div
         className="h-full flex flex-col items-center justify-center gap-10 z-10 relative"

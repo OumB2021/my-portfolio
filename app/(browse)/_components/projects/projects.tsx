@@ -25,7 +25,7 @@ function Projects() {
               <p className="text-center text-base text-zinc-200">
                 These projects showcase my skills and dedication. See everything
                 I&apos;ve worked on{" "}
-                <span className="text-cyan-300 underline underline-offset-2 hover:text-red-200 hover:underline">
+                <span className="text-cyan-300 underline underline-offset-2 hover:text-cyan-200 hover:underline">
                   <Link href="/projects">here</Link>
                 </span>
               </p>

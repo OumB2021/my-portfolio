@@ -34,7 +34,7 @@ function Navbar({ className, className2 }: LogoProps) {
         </div>
 
         {/* MIDDLE SIDE - Navigation */}
-        <div className="hidden md:flex items-center justify-center gap-x-6">
+        <div className="hidden md:flex items-center justify-center gap-x-6 lg:pl-40 md:pl-20">
           {navItems.map((item) => (
             <ItemList
               key={item.label}
@@ -46,14 +46,7 @@ function Navbar({ className, className2 }: LogoProps) {
         </div>
 
         {/* RIGHT SIDE */}
-        {!isXS && <CallToAction className2={className2} />}
-
-        {/* Hamburger Menu for Mobile */}
-        {isXS && (
-          <div className="flex md:hidden items-center justify-center gap-2">
-            <SidebarSheet />
-          </div>
-        )}
+        <CallToAction />
       </div>
     </nav>
   );

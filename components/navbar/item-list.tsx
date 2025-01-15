@@ -18,7 +18,7 @@ function ItemList({ className, label, href }: ItemsProps) {
       const section = document.querySelector(href);
       if (section) {
         const rect = section.getBoundingClientRect();
-        const offset = window.innerHeight / 2; // Adjust as needed
+        const offset = window.innerHeight / 2;
         if (rect.top <= offset && rect.bottom >= offset) {
           setIsActive(true);
         } else {

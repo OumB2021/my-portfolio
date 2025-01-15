@@ -7,9 +7,9 @@ import { cn } from "@/lib/utils";
 
 function HeroSection() {
   const { name, title, description } = Hero;
-  const coolor = "black";
+
   return (
-    <section className="relative h-full bg-neutral-950">
+    <section id="home" className="relative h-full bg-neutral-950">
       <Grain opacity={0.001} />
       <motion.div
         className="h-full flex flex-col items-center justify-center gap-10 z-10 relative"

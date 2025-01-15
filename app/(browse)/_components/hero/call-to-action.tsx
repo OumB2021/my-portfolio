@@ -1,11 +1,11 @@
 "use client";
 
-import { FileDown, MailPlus } from "lucide-react";
+import { FileDown, Mail, MailPlus } from "lucide-react";
+import Link from "next/link";
 import { useMediaQuery } from "usehooks-ts";
 
-function CallToAction({ className2 }: { className2?: string }) {
-  const isMobile = useMediaQuery("(max-width: 768px)");
-  const isXS = useMediaQuery("(max-width: 400px)");
+function CallToAction() {
+  const isXS = useMediaQuery("(max-width: 768px)");
   return (
     <div className="flex items-center justify-center gap-x-2 md:gap-x-4">
       <a
@@ -18,6 +18,18 @@ function CallToAction({ className2 }: { className2?: string }) {
           <p className="text-zinc-700 text-sm">{isXS ? "CV" : "Resume"}</p>
         </div>
       </a>
+
+      <Link
+        href="mailto:baarryoumar@gmail.com"
+        className="border hover:bg-zinc-50/50 px-3 py-2 rounded-md "
+      >
+        <div className="flex gap-x-2 gap-4 items-center justify-center transition-all duration-300 ">
+          <Mail className="size-4 text-zinc-300 " />
+          <p className="text-zinc-300  text-sm">
+            {isXS ? "Email" : "Contact me"}
+          </p>
+        </div>
+      </Link>
     </div>
   );
 }

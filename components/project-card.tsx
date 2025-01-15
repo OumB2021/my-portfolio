@@ -20,7 +20,7 @@ function ProjectCard() {
   return (
     <CarouselItem>
       <Card className="bg-red-950/20 border-none rounded-lg">
-        <div className="bg-white/80 grid grid-cols-1 md:grid-cols-5 gap-y-4 md:gap-6 py-4 md:p-1 rounded-lg shadow-sm md:h-80">
+        <div className="bg-white/80 grid grid-cols-1 md:grid-cols-5 gap-y-4 md:gap-6 py-4 md:p-1 rounded-lg shadow-sm md:h-80 ">
           {/* Image Section */}
           <div className="hidden md:flex w-full h-40 sm:h-72 md:h-auto col-span-2">
             <Image

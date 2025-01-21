@@ -31,12 +31,14 @@ function ProjectCarousel() {
         </CarouselContent>
       </Carousel>
 
-      <div className="flex justify-center items-center gap-2 mt-4">
+      <div className="flex justify-center items-center gap-2 mt-6">
         {Array.from({ length: count }).map((_, index) => (
           <div
             key={index}
             className={`rounded-full transition-all duration-300 ${
-              current === index ? "bg-cyan-500 w-5 h-2 " : "bg-gray-400 size-1"
+              current === index
+                ? "bg-cyan-400 w-5 h-1 boxsh"
+                : "bg-gray-400 size-1"
             }`}
           />
         ))}

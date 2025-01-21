@@ -1,36 +1,58 @@
-import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
+import { Github, Link2 } from "lucide-react";
+import Link from "next/link";
 
+const project = {
+  title: "3D Model for Github",
+  date: "Jan 2024",
+  description:
+    "Lorem ipsum dolor, sit amet lorem ipsum dolor, sit amet. Lorem ipsum dolor, sit amet Lorem ipsum dolor, sit amet",
+  tools: ["Next.js", "TailwindCSS", "TypeScript", "Shadcn", "Clerk", "Express"],
+  link: "https://github.com/username/repo-name",
+  github: "https://github.com/username",
+};
 function ProjectCard2() {
+  const { title, date, description, tools, link, github } = project;
   return (
-    <div className="rounded-lg shadow-md bg-zinc-800 overflow-hidden hover:shadow-xl transition-shadow duration-300">
-      {/* Image Section */}
-      <div className="relative h-60">
-        <Image
-          src="/s1.png"
-          layout="fill"
-          objectFit="cover"
-          alt="project-image"
-          className="w-full h-full"
-        />
+    <div className="rounded-lg shadow-md bg-zinc-800 overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col hover:bg-neutral-800">
+      {/* TITLE */}
+      <div className="p-4 flex flex-col justify-center">
+        <h1 className="text-zinc-200 font-semibold text-lg">{title}</h1>
+        <p className="text-sm text-muted-foreground">{date}</p>
       </div>
 
-      {/* Text Content Section */}
-      <div className="p-6">
-        {/* Title */}
-        <h2 className="text-xl font-semibold text-zinc-800 mb-2">
-          Project Title
-        </h2>
+      {/* DESCRIPTION */}
+      <div className="px-4 flex flex-col justify-center">
+        <p className="text-zinc-300 text-sm mt-4">{description}</p>
+      </div>
 
-        {/* Description */}
-        <p className="text-zinc-600 text-sm leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur
-          lectus a neque tincidunt, vitae sagittis felis eleifend.
-        </p>
+      {/* Tools used */}
+      <div className="px-4 flex flex-wrap mt-4 gap-2">
+        {tools.map((tool) => (
+          <span
+            key={tool}
+            className="text-sm bg-zinc-700 text-white rounded-md px-3 py-1 font-normal shadow-sm"
+          >
+            {tool}
+          </span>
+        ))}
+      </div>
 
-        {/* Button */}
-        <button className="mt-4 bg-zinc-800 text-white font-bold py-2 px-4 rounded-md hover:bg-zinc-700 transition-colors duration-300">
-          View Project
-        </button>
+      {/* Buttons */}
+      <div className="w-full p-4 mt-2 flex  items-center justify-center gap-2">
+        <Link href="/">
+          <Button className="bg-zinc-300 text-zinc-800 hover:bg-zinc-200">
+            <Link2 />
+            Demo
+          </Button>
+        </Link>
+        <Link href="/">
+          <Button className="bg-zinc-300 text-zinc-800 hover:bg-zinc-200">
+            <Github />
+            Repo
+          </Button>
+        </Link>
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ function HeroSection() {
         transition={{ duration: 0.5 }}
       >
         <div className="flex flex-col items-center gap-y-2">
-          <h1 className="font-semibold text-5xl sm:text-6xl md:text-8xl lg:text-9xl capitalize text-zinc-300">
+          <h1 className="font-semibold text-5xl sm:text-6xl md:text-8xl lg:text-9xl capitalize text-zinc-200">
             {name}
           </h1>
 

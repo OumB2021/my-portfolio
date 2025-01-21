@@ -15,7 +15,7 @@ function Projects() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <div className="max-w-7xl mx-auto px-14 lg:px-6 ">
+        <div className="max-w-7xl mx-auto px-5 lg:px-6 ">
           <div className="flex flex-col gap-1 md:gap-10 items-center">
             {/* TITLE */}
             <div className="flex flex-col items-center justify-center gap-4">

@@ -46,6 +46,18 @@ function ProjectCard() {
               {description}
             </p>
 
+            {/* Icon List */}
+            <div className="flex items-center flex-wrap gap-2 pt-4 md:pt-0 justify-center md:justify-start">
+              {iconList.map((tool, index) => (
+                <span
+                  key={index}
+                  className="text-sm bg-cyan-900 text-white rounded-md px-3 py-1 font-normal shadow-sm"
+                >
+                  {tool}
+                </span>
+              ))}
+            </div>
+
             {/* Buttons */}
             <div className="flex justify-center md:justify-start items-center gap-2">
               {/* Live Demo Button */}
@@ -65,18 +77,6 @@ function ProjectCard() {
                 <Github className="w-4 h-4" />
                 <span>GitHub</span>
               </Link>
-            </div>
-
-            {/* Icon List */}
-            <div className="flex items-center flex-wrap gap-2 pt-4 md:pt-0 justify-center md:justify-start">
-              {iconList.map((tool, index) => (
-                <span
-                  key={index}
-                  className="text-sm bg-cyan-900 text-white rounded-md px-3 py-1 font-normal shadow-sm"
-                >
-                  {tool}
-                </span>
-              ))}
             </div>
           </div>
         </div>

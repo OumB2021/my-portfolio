@@ -10,7 +10,7 @@ function HeroSection() {
 
   return (
     <section id="home" className="relative h-full bg-neutral-950">
-      <Grain opacity={0.001} />
+      <Grain opacity={0.01} />
       <motion.div
         className="h-full flex flex-col items-center justify-center gap-10 z-10 relative"
         initial={{ opacity: 0, y: 50 }}

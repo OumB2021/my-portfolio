@@ -49,7 +49,7 @@ export default function PageTracker() {
       {SECTIONS.map((_, index) => (
         <button
           key={index}
-          className={`h-1 w-1 rounded-lg shadow-sm ${
+          className={`size-1 md:size-[6px] rounded-lg shadow-sm ${
             activeSection === index
               ? "bg-zinc-200 !h-5"
               : "bg-zinc-500 hover:bg-zinc-400"

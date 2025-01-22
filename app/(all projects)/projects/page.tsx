@@ -23,7 +23,7 @@ function Projects() {
 
       {/* Project Cards */}
       <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 py-5  mt-4"
+        className="flex flex-wrap justify-center items-center gap-4  mt-4"
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",

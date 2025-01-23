@@ -82,11 +82,11 @@ html {
 }
 
 html {
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
 .section {
-  width: 100%;
-  scroll-snap-align: start;
-  overflow: hidden;
+  height: 100vh;
+  scroll-snap-align: center;
 }

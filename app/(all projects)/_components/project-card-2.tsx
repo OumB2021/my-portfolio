@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 import { Github, Link2 } from "lucide-react";
 import Link from "next/link";
 

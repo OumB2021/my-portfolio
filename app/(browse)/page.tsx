@@ -10,11 +10,10 @@ import Projects from "./_components/projects/projects";
 export default function Home() {
   const containerRef = useRef<HTMLDivElement>(null);
   const [activeSection, setActiveSection] = useState(0);
-  const [isScrolling, setIsScrolling] = useState(false); // Scroll lock state
+  const [isScrolling, setIsScrolling] = useState(false);
 
   useEffect(() => {
     let scrollTimeout: NodeJS.Timeout;
-    let startY: number; // For touch events
 
     const handleWheel = (event: WheelEvent) => {
       if (isScrolling) return; // Prevent multiple scrolls
@@ -25,17 +24,7 @@ export default function Home() {
       scrollTimeout = setTimeout(() => {
         const direction = event.deltaY > 0 ? 1 : -1; // Detect scroll direction
         scrollToSection(direction);
-      }, 100);
-    };
-
-    const handleTouchStart = (event: TouchEvent) => {
-      startY = event.touches[0].clientY;
-    };
-
-    const handleTouchEnd = (event: TouchEvent) => {
-      const endY = event.changedTouches[0].clientY;
-      const direction = endY - startY < 0 ? 1 : -1; // Detect swipe direction
-      scrollToSection(direction);
+      }, 50); // Reduced timeout for smoother response
     };
 
     const scrollToSection = (direction: number) => {
@@ -47,36 +36,36 @@ export default function Home() {
       if (newSection !== activeSection) {
         setActiveSection(newSection);
         const section = document.getElementById(SECTIONS[newSection]);
-        section?.scrollIntoView({ behavior: "smooth" });
-        setIsScrolling(true);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+          setIsScrolling(true);
 
-        setTimeout(() => {
-          setIsScrolling(false);
-        }, 1000); // Lock scrolling during animation
+          // Adjust the lock time based on section content size for a smoother experience
+          const lockTime = 700; // Adjust this value if needed
+          setTimeout(() => {
+            setIsScrolling(false);
+          }, lockTime);
+        }
       }
     };
 
     const container = containerRef.current;
 
-    // Attach event listeners for mouse and touch
+    // Attach event listener for mouse wheel
     if (container) {
       container.addEventListener("wheel", handleWheel, { passive: false });
-      container.addEventListener("touchstart", handleTouchStart);
-      container.addEventListener("touchend", handleTouchEnd);
     }
 
     // Cleanup listeners on unmount
     return () => {
       if (container) {
         container.removeEventListener("wheel", handleWheel);
-        container.removeEventListener("touchstart", handleTouchStart);
-        container.removeEventListener("touchend", handleTouchEnd);
       }
     };
   }, [activeSection, isScrolling]);
 
   return (
-    <div ref={containerRef} className="snap-y h-screen w-full overflow-hidden">
+    <div ref={containerRef} className="h-screen w-full overflow-hidden">
       <PageTracker />
       <section id="hero" className="h-screen snap-start">
         <HeroSection />

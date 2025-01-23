@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { GitHubLogoIcon, LinkedInLogoIcon } from "@radix-ui/react-icons";
-function Footer() {
+function Footer2() {
   return (
-    <div className="absolute bottom-0 left-0 right-0 px-10 md:px-20 py-6 z-50">
+    <div className="px-10 md:px-20 py-6 z-50">
       <div className="flex items-center justify-between max-w-7xl mx-auto">
         {/* COPYRIGHT MESSAGE */}
         <div className="text-xs md:text-sm text-zinc-300 flex items-center">
@@ -40,4 +40,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Footer2;

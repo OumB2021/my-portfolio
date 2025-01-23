@@ -23,9 +23,10 @@ function About() {
           About Me
         </h1>
         <p className="mt-4 text-sm md:text-base text-center leading-relaxed text-zinc-200 max-w-4xl mx-auto">
-          Hello! I'm <strong className="text-emerald-500">Oumar Barry</strong>,
-          a senior majoring in Computer Science at The City College of New York
-          with a passion for{" "}
+          Hello! I&apos;m{" "}
+          <strong className="text-emerald-500">Oumar Barry</strong>, a senior
+          majoring in Computer Science at The City College of New York with a
+          passion for{" "}
           <strong className="text-emerald-500">
             Full-Stack Web Development.
           </strong>
@@ -53,8 +54,8 @@ function About() {
           This newfound passion led me to switch my focus to computer science,
           where I could blend my artistic skills with programming to build
           dynamic, user-centric web applications. Now, as I approach graduation,
-          I'm excited to contribute to projects that bridge design and
-          functionality. I'm continuously learning and exploring new
+          I&apos;m excited to contribute to projects that bridge design and
+          functionality. I&apos;m continuously learning and exploring new
           technologies to create engaging and impactful digital experiences.
         </p>
       </div>

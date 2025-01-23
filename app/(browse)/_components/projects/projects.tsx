@@ -1,5 +1,4 @@
 import Grain from "@/components/grain";
-import ProjectCard from "@/components/project-card";
 import ProjectCarousel from "@/components/project-carousel";
 
 import { motion } from "framer-motion";

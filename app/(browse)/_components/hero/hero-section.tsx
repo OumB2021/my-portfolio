@@ -3,7 +3,6 @@ import Grain from "@/components/grain";
 import { motion } from "framer-motion";
 import { ChevronsDown } from "lucide-react";
 import { Hero } from "@/lib/constants";
-import { cn } from "@/lib/utils";
 
 function HeroSection() {
   const { name, title, description } = Hero;

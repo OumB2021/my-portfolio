@@ -1,10 +1,8 @@
 "use client";
 
-import { useMediaQuery } from "usehooks-ts";
 import Logo from "../logo";
 import ItemList from "./item-list";
 import { navItems } from "./nav-elements";
-import SidebarSheet from "./sidebar-sheet";
 import CallToAction from "@/app/(browse)/_components/hero/call-to-action";
 import { useEffect, useState } from "react";
 
@@ -13,9 +11,8 @@ type LogoProps = {
   className2?: string;
 };
 
-function Navbar({ className, className2 }: LogoProps) {
+function Navbar({ className }: LogoProps) {
   const [isMounted, setIsMounted] = useState(false);
-  const isXS = useMediaQuery("(max-width: 768px)");
 
   useEffect(() => {
     setIsMounted(true);

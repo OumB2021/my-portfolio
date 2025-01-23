@@ -1,6 +1,6 @@
 "use client";
 
-import { FileDown, Mail, MailPlus } from "lucide-react";
+import { FileDown, Mail } from "lucide-react";
 import Link from "next/link";
 import { useMediaQuery } from "usehooks-ts";
 

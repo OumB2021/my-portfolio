@@ -40,13 +40,13 @@ function ProjectCard2() {
 
       {/* Buttons */}
       <div className="w-full p-4 mt-2 flex  items-center justify-center gap-2">
-        <Link href="/">
+        <Link href={link}>
           <Button className="bg-zinc-300 text-zinc-800 hover:bg-zinc-200">
             <Link2 />
             Demo
           </Button>
         </Link>
-        <Link href="/">
+        <Link href={github}>
           <Button className="bg-zinc-300 text-zinc-800 hover:bg-zinc-200">
             <Github />
             Repo

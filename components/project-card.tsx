@@ -2,8 +2,7 @@ import Image from "next/image";
 import { CarouselItem } from "./ui/carousel";
 import { Card } from "./ui/card";
 import Link from "next/link";
-import { Github, Globe, Send } from "lucide-react";
-import { transform } from "next/dist/build/swc";
+import { Github, Globe } from "lucide-react";
 
 const project = {
   id: "1",

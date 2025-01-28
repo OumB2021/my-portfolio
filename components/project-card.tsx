@@ -32,12 +32,14 @@ function ProjectCard() {
             />
           </div>
 
-          <div className="flex flex-col md:py-3 justify-between gap-4 col-span-3 w-full px-4 md:px-0">
+          <div className="flex flex-col md:py-3 justify-between gap-4 col-span-3 w-full px-4 md:px-0 md:pr-3">
             <div className="flex flex-col items-center md:items-start justify-start gap-y-1">
               <h3 className="text-lg md:text-xl font-semibold text-gray-700 text-center md:text-left">
                 {title}
               </h3>
-              <p className="text-sm text-muted-foreground">Spring 2025</p>
+              <p className="text-sm bg-cyan-900 text-white rounded-md px-3 py-1">
+                Front-end
+              </p>
             </div>
 
             {/* Description */}
@@ -46,7 +48,7 @@ function ProjectCard() {
             </p>
 
             {/* Icon List */}
-            <div className="flex items-center flex-wrap gap-2 pt-4 md:pt-0 justify-center md:justify-start">
+            <div className="flex items-center flex-wrap gap-2  md:pt-0 justify-center md:justify-start">
               {iconList.map((tool, index) => (
                 <span
                   key={index}

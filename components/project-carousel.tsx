@@ -24,10 +24,9 @@ function ProjectCarousel() {
     <div className="relative p-4 md:p-0 md:max-w-4xl mx-auto">
       <Carousel setApi={setApi}>
         <CarouselContent>
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
-          <ProjectCard />
+          {Array.from({ length: 4 }).map((_i, key) => (
+            <ProjectCard key={key} />
+          ))}
         </CarouselContent>
       </Carousel>
 

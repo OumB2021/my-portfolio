@@ -31,15 +31,6 @@ export const projects = [
     repository: "https://github.com/OumB2021/Computer-Store",
   },
   {
-    id: "3",
-    title: "Computer Store",
-    description:
-      "A website that operates like Amazon and PcBuilder where users can buy individual computer parts or they can build build a PC by picking the necessary parts for it",
-    image: "/s1.png",
-    iconList: ["React", "Express", "MongoDB", "NodeJs", "Redux"],
-    repository: "https://github.com/OumB2021/Computer-Store",
-  },
-  {
     id: "4",
     title: "Auto Mate",
     description:
@@ -48,23 +39,22 @@ export const projects = [
     iconList: ["Vite", "Flask", "CSS", "Firebase"],
     repository: "https://github.com/OumB2021/Computer-Store",
   },
-
   {
     id: "5",
     title: "Video Streaming",
     description:
       "A website that operates like Amazon and PcBuilder where users can buy individual computer parts or they can build build a PC by picking the necessary parts for it",
     image: "/s1.png",
-    iconList: ["NextJs", "Prisma", "LiveKit", "PostgreSQL", "Clerk"],
+    iconList: ["NextJs", "Prisma", "TypeScript", "PostgreSQL", "Clerk"],
     repository: "https://github.com/OumB2021/Video-Streaming",
   },
   {
     id: "7",
-    title: "Blog App  ",
+    title: "Blog App",
     description:
       "A website that operates like Amazon and PcBuilder where users can buy individual computer parts or they can build build a PC by picking the necessary parts for it",
     image: "/s1.png",
-    iconList: ["NextJs", "Prisma", "LiveKit", "PostgreSQL", "Clerk"],
-    repository: "https://github.com/OumB2021/Video-Streaming",
+    iconList: ["NextJs", "Prisma", "LiveKit", "PostgreSQL", "Kinde"],
+    repository: "https://github.com/OumB2021/Blog-app",
   },
 ];

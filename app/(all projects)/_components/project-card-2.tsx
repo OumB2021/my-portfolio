@@ -1,7 +1,7 @@
 import { ExternalLink, Github } from "lucide-react";
 import Link from "next/link";
 function ProjectCard2({ project }: any) {
-  const { title, date, description, iconList, link, github } = project;
+  const { title, date, description, iconList, repository, demo } = project;
   return (
     <div className="rounded-lg shadow-md max-w-sm bg-zinc-800 overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col hover:bg-neutral-800 mx-auto text-center">
       {/* TITLE */}
@@ -28,20 +28,28 @@ function ProjectCard2({ project }: any) {
 
       {/* Buttons */}
       <div className="w-full p-4  flex items-center justify-center gap-2 mt-auto">
-        <Link
-          href="/"
-          className="flex items-center gap-1 px-3 py-2 border-[1px] border-zinc-100 text-zinc-100 rounded-md transition"
-        >
-          <ExternalLink className="w-4 h-4" />
-          <p className="text-sm"> Demo</p>
-        </Link>
-        <Link
-          href="/"
-          className="flex items-center gap-2 px-3 py-2 shadow-sm border bg-zinc-200 text-zinc-700 hover:bg-zinc-100 rounded-lg  transition"
-        >
-          <Github className="w-4 h-4" />
-          <p className="text-sm">Repo</p>
-        </Link>
+        {demo && (
+          <Link
+            href={demo}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1 px-3 py-2 border-[1px] border-zinc-100 text-zinc-100 rounded-md transition"
+          >
+            <ExternalLink className="w-4 h-4" />
+            <p className="text-sm"> Demo</p>
+          </Link>
+        )}
+        {repository && (
+          <Link
+            href={repository}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 px-3 py-2 shadow-sm border bg-zinc-200 text-zinc-700 hover:bg-zinc-100 rounded-lg  transition"
+          >
+            <Github className="w-4 h-4" />
+            <p className="text-sm">Repo</p>
+          </Link>
+        )}
       </div>
     </div>
   );

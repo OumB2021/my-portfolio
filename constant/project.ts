@@ -127,6 +127,7 @@ export const projectsAll: ProjectType[] = [
       "A Python-based web scraping project to extract CCNY's academic calendar using BeautifulSoup and Requests. The scraped data is analyzed in a Jupyter Notebook for further processing.",
     iconList: ["Python", "BeautifulSoup", "Requests", "Jupyter Notebook"],
     date: "March 2025",
+    repository: "https://github.com/OumB2021/Scrape_CCNY_Calendar",
   },
   {
     id: "6",
@@ -145,6 +146,7 @@ export const projectsAll: ProjectType[] = [
       "LiveKit",
     ],
     date: "April 2024",
+    repository: "https://github.com/OumB2021/Video-Streaming",
   },
   {
     id: "7",
@@ -154,6 +156,7 @@ export const projectsAll: ProjectType[] = [
       "A CRUD-based recipe application to practice the Next.js App Router API with MongoDB. Users can create, update, and delete recipes in an interactive and intuitive UI.",
     iconList: ["NextJs", "TailwindCSS", "MongoDB"],
     date: "May 2024",
+    repository: "https://github.com/OumB2021/Recipe-App",
   },
   {
     id: "8",
@@ -171,6 +174,7 @@ export const projectsAll: ProjectType[] = [
       "Redux",
     ],
     date: "April 2023",
+    repository: "https://github.com/OumB2021/Computer-Store",
   },
   {
     id: "9",
@@ -180,6 +184,7 @@ export const projectsAll: ProjectType[] = [
       "A social media-inspired platform where users can share emoji reactions. Built using React for the frontend and Node.js for the backend.",
     iconList: ["React", "NodeJS"],
     date: "February 2023",
+    repository: "https://github.com/OumB2021/Emojipedia",
   },
   {
     id: "10",
@@ -189,6 +194,7 @@ export const projectsAll: ProjectType[] = [
       "A simple yet functional to-do list application built using EJS templating, HTML, CSS, and JavaScript.",
     iconList: ["EJS", "HTML", "CSS", "JavaScript"],
     date: "January 2023",
+    repository: "https://github.com/OumB2021/To-Do-List",
   },
   {
     id: "11",
@@ -198,6 +204,7 @@ export const projectsAll: ProjectType[] = [
       "A classic Simon Says game implemented with HTML, CSS, and JavaScript, featuring interactive user input and dynamic sound effects.",
     iconList: ["HTML", "CSS", "JavaScript"],
     date: "December 2022",
+    repository: "https://github.com/OumB2021/Simon_Game",
   },
   {
     id: "12",
@@ -207,5 +214,6 @@ export const projectsAll: ProjectType[] = [
       "A fun Tinder-inspired landing page for dog adoption, designed using Bootstrap and HTML/CSS.",
     iconList: ["HTML", "CSS", "Bootstrap"],
     date: "December 2022",
+    repository: "https://github.com/OumB2021/tinDog",
   },
 ];

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { CarouselItem } from "./ui/carousel";
 import { Card } from "./ui/card";
 import Link from "next/link";
-import { ExternalLink, Github, Globe, Link2 } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 
 type ProjectType = {
   id: string;

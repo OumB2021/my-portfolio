@@ -3,11 +3,7 @@ import { Inter } from "next/font/google"; // Import the Inter font
 import "./globals.css";
 
 // Configure the Inter font
-const interFont = Inter({
-  subsets: ["latin"], // Specify subsets for better optimization
-  variable: "--font-inter", // Define a CSS variable for the font
-  display: "swap", // Use "swap" to improve performance
-});
+const interFont = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Oumar Barry | Full-Stack Developer Portfolio",
@@ -25,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${interFont.variable} antialiased`}>{children}</body>
+      <body className={`${interFont} antialiased`}>{children}</body>
     </html>
   );
 }

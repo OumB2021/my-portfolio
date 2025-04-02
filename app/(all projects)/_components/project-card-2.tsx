@@ -14,7 +14,7 @@ const project = {
 function ProjectCard2() {
   const { title, date, description, tools, link, github } = project;
   return (
-    <div className="rounded-lg shadow-md bg-zinc-800 overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col hover:bg-neutral-800">
+    <div className="rounded-lg shadow-md max-w-sm bg-zinc-800 overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col hover:bg-neutral-800 mx-auto">
       {/* TITLE */}
       <div className="p-4 flex flex-col justify-center">
         <h1 className="text-zinc-200 font-semibold text-lg">{title}</h1>
@@ -27,7 +27,7 @@ function ProjectCard2() {
       </div>
 
       {/* Tools used */}
-      <div className="px-4 flex flex-wrap mt-4 gap-2">
+      <div className="px-4 flex flex-wrap justify-center mt-4 gap-2">
         {tools.map((tool) => (
           <span
             key={tool}

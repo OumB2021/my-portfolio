@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ProjectCard from "./project-card";
 import { Carousel, CarouselContent, type CarouselApi } from "./ui/carousel";
+import { projectsCaroussel } from "@/constant/project";
 
 function ProjectCarousel() {
   const [api, setApi] = useState<CarouselApi>();
@@ -21,11 +22,11 @@ function ProjectCarousel() {
   }, [api]);
 
   return (
-    <div className="relative p-4 md:p-0 md:max-w-4xl mx-auto">
+    <div className="relative p-6 md:p-0 md:max-w-4xl mx-auto">
       <Carousel setApi={setApi}>
-        <CarouselContent>
-          {Array.from({ length: 4 }).map((_i, key) => (
-            <ProjectCard key={key} />
+        <CarouselContent className="h-full">
+          {projectsCaroussel.map((project) => (
+            <ProjectCard key={project.id} project={project} />
           ))}
         </CarouselContent>
       </Carousel>
@@ -35,9 +36,7 @@ function ProjectCarousel() {
           <div
             key={index}
             className={`rounded-full transition-all duration-300 ${
-              current === index
-                ? "bg-cyan-400 w-5 h-1 boxsh"
-                : "bg-gray-400 size-1"
+              current === index ? "bg-zinc-100 w-5 h-1" : "bg-zinc-500 size-1"
             }`}
           />
         ))}

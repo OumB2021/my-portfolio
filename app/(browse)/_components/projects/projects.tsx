@@ -6,8 +6,8 @@ import Link from "next/link";
 
 function Projects() {
   return (
-    <section id="projects" className="relative h-full bg-cyan-950">
-      <Grain opacity={0.09} />
+    <section id="projects" className="relative h-full bg-neutral-900">
+      <Grain opacity={0.01} />
       <motion.div
         className="h-full flex flex-col items-center justify-center gap-10 z-10 relative"
         initial={{ opacity: 0, y: 50 }}
@@ -24,7 +24,7 @@ function Projects() {
               <p className="text-center text-base text-zinc-200">
                 These projects showcase my skills and dedication. See everything
                 I&apos;ve worked on{" "}
-                <span className="text-cyan-300  hover:text-cyan-200 hover:underline hover:underline-offset-2">
+                <span className="text-muted-foreground hover:underline hover:underline-offset-2">
                   <Link href="/projects">here</Link>
                 </span>
               </p>

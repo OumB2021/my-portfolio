@@ -8,7 +8,7 @@ function HeroSection() {
   const { name, title, description } = Hero;
 
   return (
-    <section id="home" className="relative h-full bg-neutral-950">
+    <section id="home" className="relative h-full bg-[#330A1F]">
       <Grain opacity={0.01} />
       <motion.div
         className="h-full flex flex-col items-center justify-center gap-10 z-10 relative"
@@ -21,11 +21,11 @@ function HeroSection() {
             {name}
           </h1>
 
-          <h2 className="text-2xl  md:text-4xl lg:text-5xl text-zinc-400 uppercase ">
+          <h2 className="text-2xl  md:text-4xl lg:text-5xl text-zinc-300 uppercase ">
             {title}
           </h2>
 
-          <p className="text-xs md:text-lg lg:tracking-wide  text-muted-foreground ">
+          <p className="text-xs md:text-lg lg:tracking-wide text-zinc-500">
             {description}
           </p>
         </div>

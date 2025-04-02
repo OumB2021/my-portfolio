@@ -1,4 +1,4 @@
-import Footer2 from "@/components/footer2";
+import Footer from "@/components/footer";
 import Grain from "@/components/grain";
 
 function ProjectLayout({ children }: { children: React.ReactNode }) {
@@ -6,7 +6,7 @@ function ProjectLayout({ children }: { children: React.ReactNode }) {
     <div className="flex flex-col bg-zinc-950 ">
       <Grain opacity={0.1} />
       <div className="justify-center p-5 md:p-10 lg:p-24 z-10">{children}</div>
-      <Footer2 />
+      <Footer />
     </div>
   );
 }

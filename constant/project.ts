@@ -153,7 +153,7 @@ export const projectsAll: ProjectType[] = [
     description:
       "A CRUD-based recipe application to practice the Next.js App Router API with MongoDB. Users can create, update, and delete recipes in an interactive and intuitive UI.",
     iconList: ["NextJs", "TailwindCSS", "MongoDB"],
-    date: "2029",
+    date: "May 2024",
   },
   {
     id: "8",
@@ -170,7 +170,7 @@ export const projectsAll: ProjectType[] = [
       "NodeJs",
       "Redux",
     ],
-    date: "Apr 2023",
+    date: "April 2023",
   },
   {
     id: "9",
@@ -206,6 +206,6 @@ export const projectsAll: ProjectType[] = [
     description:
       "A fun Tinder-inspired landing page for dog adoption, designed using Bootstrap and HTML/CSS.",
     iconList: ["HTML", "CSS", "Bootstrap"],
-    date: "2022",
+    date: "December 2022",
   },
 ];

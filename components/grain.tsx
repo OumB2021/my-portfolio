@@ -9,7 +9,7 @@ const Grain = ({ opacity = 0.1, zIndex = 0 }) => {
       }}
     >
       <Image
-        src="/Noise4.svg"
+        src="/Noise.jpg"
         alt="noise"
         fill
         style={{

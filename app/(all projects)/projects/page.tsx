@@ -7,7 +7,7 @@ function Projects() {
   return (
     <div className="max-w-7xl min-h-screen flex flex-col w-full p-2 mx-auto">
       {/* Return link */}
-      <Link href="/" className="w-fit ">
+      <Link href="/#projects" className="w-fit ">
         <div className="bg-zinc-700 p-3 flex items-center gap-2 rounded-full hover:bg-zinc-800 shadow-md">
           <ArrowLeft className="size-4 text-zinc-50 " />
         </div>

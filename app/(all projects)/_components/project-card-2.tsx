@@ -1,7 +1,5 @@
-import { Button } from "@/components/ui/button";
-import { Github, Link2 } from "lucide-react";
+import { ExternalLink, Github } from "lucide-react";
 import Link from "next/link";
-import { ProjectType } from "@/constant/project";
 function ProjectCard2({ project }: any) {
   const { title, date, description, iconList, link, github } = project;
   return (
@@ -12,7 +10,6 @@ function ProjectCard2({ project }: any) {
         <p className="text-sm text-muted-foreground">{date}</p>
       </div>
 
-      {/* DESCRIPTION */}
       <div className="px-4 flex flex-col justify-center ">
         <p className="text-zinc-300 text-sm mt-2 line-clamp-3">{description}</p>
       </div>
@@ -31,17 +28,19 @@ function ProjectCard2({ project }: any) {
 
       {/* Buttons */}
       <div className="w-full p-4  flex items-center justify-center gap-2 mt-auto">
-        <Link href="/">
-          <Button className="bg-zinc-300 text-zinc-800 hover:bg-zinc-200">
-            <Link2 />
-            Demo
-          </Button>
+        <Link
+          href="/"
+          className="flex items-center gap-1 px-3 py-2 border-[1px] border-zinc-100 text-zinc-100 rounded-md transition"
+        >
+          <ExternalLink className="w-4 h-4" />
+          <p className="text-sm"> Demo</p>
         </Link>
-        <Link href="/">
-          <Button className="bg-zinc-300 text-zinc-800 hover:bg-zinc-200">
-            <Github />
-            Repo
-          </Button>
+        <Link
+          href="/"
+          className="flex items-center gap-2 px-3 py-2 shadow-sm border bg-zinc-200 text-zinc-700 hover:bg-zinc-100 rounded-lg  transition"
+        >
+          <Github className="w-4 h-4" />
+          <p className="text-sm">Repo</p>
         </Link>
       </div>
     </div>

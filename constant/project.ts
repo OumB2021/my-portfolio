@@ -15,8 +15,8 @@ export const projectsCaroussel = [
       "Stripe",
       "Gemini AI",
     ],
-    repository: "https://github.com/OumB2021/AI-Logo-Generator",
-    demo: "https://ai-logo-generator-rouge.vercel.app/",
+    repository: "https://github.com/OumB2021/ai-logo-maker",
+    demo: "https://ai-logo-maker-theta.vercel.app/",
   },
   {
     id: "2",
@@ -27,20 +27,19 @@ export const projectsCaroussel = [
     image:
       "https://j90aldrpnd.ufs.sh/f/H5P49jZha6Jpo3PRYzCkFiPxbJUpz39kq1MACNYom2VdQvWH",
     iconList: ["NextJs", "JavaScript", "TailwindCSS", "MongoDB", "NextAuth"],
-    repository: "https://github.com/OumB2021/AI-Logo-Generator",
-    demo: "https://ai-logo-generator-rouge.vercel.app/",
+    repository: "https://github.com/OumB2021/Oumblog",
+    demo: "https://my-blog-delta-swart.vercel.app/",
   },
   {
     id: "3",
     title: "Omniscolaire",
     type: "Full-stack",
     description:
-      "A university management system designed to streamline course management, student enrollment, and academic records. Built using Next.js and TypeScript, the platform integrates Supabase for database management, Prisma for ORM, and NextAuth for authentication, ensuring a seamless and secure experience.",
+      "A university management system designed to modernize course management, student enrollment, and academic record-keeping, tailored for implementation in Africa. Built with Next.js and TypeScript, the platform leverages Supabase for database management, Prisma for ORM, and NextAuth for authentication, ensuring a seamless, scalable, and secure experience for educational institutions.",
     image:
       "https://j90aldrpnd.ufs.sh/f/H5P49jZha6JpsjeH92MGNuLY8xzA5qZp2KEtOXgrQowT3j1W",
     iconList: ["NextJs", "TypeScript", "TailwindCSS", "Prisma", "NextAuth"],
-    repository: "https://github.com/OumB2021/AI-Logo-Generator",
-    demo: "https://ai-logo-generator-rouge.vercel.app/",
+    repository: "https://github.com/boundy99/omniscolaire-dashboard",
   },
   {
     id: "4",
@@ -51,7 +50,7 @@ export const projectsCaroussel = [
     image:
       "https://j90aldrpnd.ufs.sh/f/H5P49jZha6JpoBIlP4kFiPxbJUpz39kq1MACNYom2VdQvWHZ",
     iconList: ["NextJs", "TypeScript", "Vercel"],
-    repository: "https://github.com/OumB2021/AI-Logo-Generator",
-    demo: "https://ai-logo-generator-rouge.vercel.app/",
+    repository: "https://github.com/OumB2021/my-portfolio",
+    demo: "https://my-portfolio-3l77-nine.vercel.app/",
   },
 ];

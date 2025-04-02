@@ -11,9 +11,12 @@ type ProjectType = {
   description: string;
   image: string;
   iconList: string[];
+  repository?: string;
+  demo?: string;
 };
 function ProjectCard({ project }: { project: ProjectType }) {
-  const { title, type, description, image, iconList } = project;
+  const { title, type, description, image, iconList, repository, demo } =
+    project;
   return (
     <CarouselItem>
       <Card className=" border-none rounded-lg">
@@ -36,21 +39,28 @@ function ProjectCard({ project }: { project: ProjectType }) {
                   {title}
                 </h3>
                 <div className="flex justify-center md:justify-start items-center gap-2">
-                  {/* GitHub Repo Button */}
-                  <Link
-                    href="#"
-                    className="flex items-center gap-1 px-3 py-2 bg-zinc-700 text-white rounded-md hover:bg-zinc-600 transition"
-                  >
-                    <ExternalLink className="w-4 h-4" />
-                    <p className="text-sm"> Demo</p>
-                  </Link>
-                  <Link
-                    href="#"
-                    className="flex items-center gap-2 px-3 py-2 shadow-sm border border-zinc-200 text-zinc-700 hover:bg-zinc-100 rounded-lg  transition"
-                  >
-                    <Github className="w-4 h-4" />
-                    <p className="text-sm">Repo</p>
-                  </Link>
+                  {demo && (
+                    <Link
+                      href={demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 px-3 py-2 bg-zinc-700 text-white rounded-md hover:bg-zinc-600 transition"
+                    >
+                      <ExternalLink className="w-4 h-4" />
+                      <p className="text-sm"> Demo</p>
+                    </Link>
+                  )}
+                  {repository && (
+                    <Link
+                      href={repository}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 px-3 py-2 shadow-sm border border-zinc-200 text-zinc-700 hover:bg-zinc-100 rounded-lg  transition"
+                    >
+                      <Github className="w-4 h-4" />
+                      <p className="text-sm">Repo</p>
+                    </Link>
+                  )}
                 </div>
               </div>
               <p className="text-sm text-muted-foreground font-semibold ">

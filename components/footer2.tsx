@@ -12,7 +12,7 @@ function Footer2() {
         {/* ICONS */}
         <div className="flex items-center gap-3">
           <Link
-            href="#"
+            href="https://www.linkedin.com/in/oumar-barry-ab8000239/"
             className="p-2 bg-zinc-300 rounded-sm hover:bg-zinc-200  flex items-center gap-2 transition-colors duration-200"
           >
             <div className="text-sm text-muted-foreground flex items-center gap-2">
@@ -24,7 +24,7 @@ function Footer2() {
           </Link>
 
           <Link
-            href="#"
+            href="https://github.com/OumB2021"
             className="p-2 bg-zinc-300 rounded-sm hover:bg-zinc-200 flex items-center gap-2 transition-colors duration-200"
           >
             <div className="text-sm text-muted-foreground flex items-center gap-2">

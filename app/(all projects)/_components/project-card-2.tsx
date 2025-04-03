@@ -1,6 +1,8 @@
 import { ExternalLink, Github } from "lucide-react";
 import Link from "next/link";
-function ProjectCard2({ project }: any) {
+import { ProjectType } from "@/constant/project";
+
+function ProjectCard2({ project }: { project: ProjectType }) {
   const { title, date, description, iconList, repository, demo } = project;
   return (
     <div className="rounded-lg shadow-md max-w-sm bg-zinc-800 overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col hover:bg-neutral-800 mx-auto text-center">
@@ -16,7 +18,7 @@ function ProjectCard2({ project }: any) {
 
       {/* Tools used */}
       <div className="px-4 flex flex-wrap justify-center mt-6 gap-2">
-        {iconList.map((tool: any) => (
+        {iconList.map((tool: string) => (
           <span
             key={tool}
             className="text-sm bg-zinc-700 text-white rounded-md px-3 py-1 font-normal shadow-sm"

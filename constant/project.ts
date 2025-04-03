@@ -60,7 +60,7 @@ export const projectsCaroussel = [
       "A personal portfolio showcasing my projects, skills, and experience. Built with Next.js and TypeScript, the website features a modern UI, smooth animations, and optimized performance. Deployed on Vercel for fast loading and global accessibility.",
     image:
       "https://j90aldrpnd.ufs.sh/f/H5P49jZha6JpoBIlP4kFiPxbJUpz39kq1MACNYom2VdQvWHZ",
-    iconList: ["NextJs", "TypeScript", "Vercel"],
+    iconList: ["NextJs", "TypeScript", "tailwind CSS", "Vercel"],
     repository: "https://github.com/OumB2021/my-portfolio",
     demo: "https://my-portfolio-3l77-nine.vercel.app/",
   },

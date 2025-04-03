@@ -18,8 +18,8 @@ function ProjectCard({ project }: { project: ProjectType }) {
   const { title, type, description, image, iconList, repository, demo } =
     project;
   return (
-    <CarouselItem>
-      <Card className=" border-none rounded-lg">
+    <CarouselItem className="">
+      <Card className="border-none rounded-lg ">
         <div className="bg-white grid grid-cols-1 md:grid-cols-5 gap-y-4 md:gap-6 py-4 md:p-1 rounded-lg shadow-sm md:h-80 ">
           {/* Image Section */}
           <div className="hidden relative md:flex w-full h-40 sm:h-72 md:h-auto col-span-2 rounded-lg">

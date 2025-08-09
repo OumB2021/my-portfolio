@@ -12,6 +12,25 @@ export type ProjectType = {
 export const projectsCaroussel = [
   {
     id: "1",
+    title: "Creator-verse",
+    type: "Full-stack",
+    description:
+      "A full-stack web application that supports CRUD (create, read, update, and delete) operations for managing your favorite content creators worth following. Built with a solid frontend and backend architecture, the app provides a seamless user experience for discovering and organizing content creators. Features a responsive design with smooth animations and robust data management capabilities.",
+    image:
+      "https://j90aldrpnd.ufs.sh/f/H5P49jZha6JpjhvFLYPJoJDaQYslcrX6t2guUWOnFTzvyAK7",
+    iconList: [
+      "React",
+      "PostgreSQL",
+      "Tailwind",
+      "Express.js",
+      "Vercel",
+      "Render",
+    ],
+    repository: "https://github.com/OumB2021/creator-verse",
+    demo: "https://creator-verse-ten.vercel.app/",
+  },
+  {
+    id: "2",
     title: "AI Logo Generator",
     type: "Full-stack",
     description:
@@ -30,7 +49,7 @@ export const projectsCaroussel = [
     demo: "https://ai-logo-maker-theta.vercel.app/",
   },
   {
-    id: "2",
+    id: "3",
     title: "OumBlog",
     type: "Full-stack",
     description:
@@ -42,7 +61,7 @@ export const projectsCaroussel = [
     demo: "https://my-blog-delta-swart.vercel.app/",
   },
   {
-    id: "3",
+    id: "4",
     title: "Omniscolaire",
     type: "Full-stack",
     description:
@@ -53,7 +72,7 @@ export const projectsCaroussel = [
     repository: "https://github.com/boundy99/omniscolaire-dashboard",
   },
   {
-    id: "4",
+    id: "5",
     title: "My Portfolio",
     type: "Front-end",
     description:
